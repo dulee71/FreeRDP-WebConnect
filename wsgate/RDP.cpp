@@ -1115,6 +1115,7 @@ namespace wsgate {
                     }
                     m_State = STATE_INITIAL;
                     addError("Could not connect to RDP backend.");
+					log::info << "[RDP::ThreadFunc]" << "Could not connect to RDP backend." << endl;
                     break;
                 case STATE_INITIAL:
                 case STATE_CLOSED:
