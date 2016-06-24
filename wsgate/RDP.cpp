@@ -397,12 +397,15 @@ namespace wsgate {
         m_rdpSettings->ServerHostname = strdup(host.c_str());
         if (!user.empty()) {
             m_rdpSettings->Username = strdup(user.c_str());
+			log::info << "[RDP::Connect]" << "m_rdpSettings->Username: " << m_rdpSettings->Username << endl;
         }
         if (!domain.empty()) {
             m_rdpSettings->Domain = strdup(domain.c_str());
+			log::info << "[RDP::Connect]" << "m_rdpSettings->Domain: " << m_rdpSettings->Domain << endl;
         }
         if (!pass.empty()) {
             m_rdpSettings->Password = strdup(pass.c_str());
+			log::info << "[RDP::Connect]" << "m_rdpSettings->Password: " << m_rdpSettings->Password << endl;
         }
         //authentication is not needed when username and password is not specified
         if (user.empty() && pass.empty()){
