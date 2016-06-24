@@ -61,7 +61,7 @@ namespace wsgate{
                 domain = "";
             }
         }
-		log::info << "[SplitUserDomain]" << "fullUsername" << fullUsername << "username" << username << "domain" << domain << endl;
+		log::info << "[SplitUserDomain]" << "fullUsername: " << fullUsername << ", username: " << username << ", domain: " << domain << endl;
     }
 }
 
